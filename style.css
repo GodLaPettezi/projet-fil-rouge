@@ -1,0 +1,126 @@
+/* Couleur de fond générale de la page */
+body {
+    background-color: #031A20;
+}
+
+/* Couleur du texte mis en évidence */
+#couleur {
+    color: #19D5A5;
+}
+
+/* Mise en forme des icônes */
+.logo {
+    display: flex;
+    justify-content: end;
+    font-size: large;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Mise en forme du texte de présentation */
+#lorem {
+    color: #9BA7A5;
+    font-family: Montserrat;
+    margin-left: 120px;
+}
+
+/* Mise en forme du menu de navigation */
+.menu {
+    font-family: Montserrat;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 15px 5px;
+    color: white;
+}
+
+/* Apparence des liens du menu */
+.menu a {
+    color: #F3F1ED;
+    text-decoration: none;
+    padding: 5px 8px;
+}
+
+/* Apparence d'un lien lorsqu'il est sélectionné */
+.menu a:focus {
+    background-color: #19D5A5;
+    color: #031A20;
+}
+
+/* Mise en forme générale des en-têtes */
+header {
+    color: #F3F1ED;
+    font-family: Yeseva One;
+    font-size: small;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Séparation de l'en-tête principal */
+#first {
+    border-bottom: 1px solid #9BA7A5;
+}
+
+/* Mise en forme du nom de la photographe */
+#texte {
+    font-weight: 10;
+    margin-left: 20px;
+}
+
+/* Mise en forme du bas de page */
+footer {
+    text-align: center;
+    font-family: Montserrat;
+    color: #9BA7A5;
+    font-size: small;
+}
+
+/* Mise en forme du titre de présentation */
+#second {
+    margin-left: 120px;
+    font-size: x-large;
+}
+
+/* Organisation des images en grille de 4 colonnes */
+.image {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 8px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+/* Ajustement des images dans leur emplacement */
+.image img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+/* Décalage de la galerie vers la droite */
+.image {
+    margin-left: 120px;
+    width: calc(100% - 120px);
+}
+
+/* Adaptation de la page aux écrans de téléphone */
+@media screen and (max-width: 600px) {
+
+    /* Affichage de la galerie en 3 colonnes */
+    .image {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5px;
+        width: auto;
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+
+    /* Masquage des images à partir de la 10e */
+    .image img:nth-child(n+10) {
+        display: none;
+    }
+
+}
