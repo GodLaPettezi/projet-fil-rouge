@@ -2,7 +2,7 @@
 
 Présentation d'un site web consacré à une photographe. Ce projet met en avant ses différentes photos avec une interface moderne et adaptée à tous les écrans.
 
- **Page Web :** [Découvrir le portfolio]((https://godlapettezi.github.io/projet-fil-rouge/#))
+ **Page Web :** [Découvrir le portfolio](https://godlapettezi.github.io/projet-fil-rouge/#)
 
 ## Technologies utilisées
 
