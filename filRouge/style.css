@@ -1,3 +1,34 @@
-.body {
-    color: white;
+body {
+    background-color: #031A20;
+}
+
+#couleur {
+    color: #19D5A5;
+}
+
+#logo {
+    display: flex;
+    justify-content: end;
+}
+
+#lorem {
+    color: #9BA7A5;
+    font-family: Montserrat;
+}
+.menu {
+    font-family: Montserrat;
+}
+
+header {
+    color: #F3F1ED;
+    font-family: Yeseva One;
+    font-size: small;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer {
+    text-align: center;
+    font-family: Montserrat;
+    color: #9BA7A5;
 }
